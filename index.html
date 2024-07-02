@@ -14,8 +14,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <nav class="desktop_navbar">
       <a href="#"><img class="desktop_navbar_logo_img" src="minev/logo_small.png" alt="logo"></a>
-      <a href="https://discord.com/invite/pJ3bZ8wpMa" class="desktop_navbar_link">Discord</a>
-      <a href="#discord" class="desktop_navbar_link scroll">Votes</a>
+      <a href="https://wiki.example.com/" class="desktop_navbar_link">Wiki</a>
+      <a href="#discord" class="desktop_navbar_link scroll">Community</a>
       <a href="#about" class="desktop_navbar_link scroll">About Us</a>
       <div class="desktop_navbar_link2_div">
           <a href="#join" class="desktop_navbar_link2 scroll">Join Us!</a>
@@ -25,7 +25,6 @@
       <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="minev/logo_small.png" alt="logo"></a>
       <div id="mobile_navbar_links">
           <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://discord.com/invite/pJ3bZ8wpMa">Discord</a>
-          <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://bit.ly/MinevyGroup">Group</a>
           <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#discord">Vote</a>
           <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#about">About Us</a>
           <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#join">Join Us</a>
@@ -53,29 +52,13 @@
           <a>Minevy Network<br></a>
           <a class="main1_actcent">Minecraft Server Official</a><a></a>
         </div>
-        <div class="main1_ipcopier_div">
-          <button class="main1_ipcopier" onclick="copyText()" type="button">
-            <span class="main1_ipcopier_text1">mc.minevy.my.id</span>
-            <br>
-            <span class="main1_ipcopier_text2">Click to copy</span>
-          </button>
-          <script>
-            function copyText() {
-                navigator.clipboard.writeText
-            ("mc.minevy.my.id");
-                }
-            $(document).ready(function() {
-            $('.main1_ipcopier').click(function() {
-                var popup = $('<div>', { class: 'main1_popup' })
-                .append($('<h3 class="copy_confirm">').text('Copied IP to clipboard'))
-                $(this).after(popup);
-                setTimeout(function() {
-                popup.remove();
-                }, 1000);
-            });
-            });
-        </script>
-        </div>
+        <div class="playercount">
+			<!-- Replace play.cubecraft.net with your server IP address -->
+			<!-- Do it on both line 66 and line 67 -->
+			<!-- Please set both your IP and port -->
+			<p>Join <span class="sip" data-ip="mc.minevy.my.id" data-port="19132">
+			</span> other players on <span class="ip">mc.minevy.my.id</span></p>
+		</div>
         <a href="#more" class="scroll">
           <img alt="downarrow" class="main1_downarrow" src="minev/downarrow.png">
         </a>
@@ -133,7 +116,7 @@
             <img class="main5_admins_img" alt="admin member img" src="minev/member_placeholder.webp">
             <div class="main5_admins_description_div">
               <a class="main5_admins_description_rank main5_admins_description_rank_owner">[Owner]</a>
-              <a class="main5_admins_description_title" href="https://wa.me/+6281287075611">Pakuchi</a>
+              <a class="main5_admins_description_title" href="https://wa.me/+62812-8707-5611">Pakuchi</a>
               <a class="main5_admins_description">•WhatsApp•<br>+6281287075611</a>
             </div>
           </div>
@@ -141,7 +124,7 @@
             <img class="main5_admins_img" alt="admin member img" src="minev/member_placeholder.webp">
             <div class="main5_admins_description_div">
               <a class="main5_admins_description_rank main5_admins_description_rank_admin">[Admin]</a>
-              <a class="main5_admins_description_title" href="https://wa.me/+6281332297945">Sky</a>
+              <a class="main5_admins_description_title" href="https://example.com">Sky</a>
               <a class="main5_admins_description">•WhatsApp•<br>+6281332297945</a>
             </div>
           </div>
@@ -205,5 +188,6 @@
     <footer class="copyright_div">
       <a href="https://profil.ademods.my.id" class="copyright">Copyright By @Ademodsx</a>
     </footer>
+    <script src="js/main.js" type="text/javascript"></script>
   </body>
 </html>
