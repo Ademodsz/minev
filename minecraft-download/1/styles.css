@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    margin-top: 20px;
+}
+
+.logo {
+    width: 150px; /* Ubah ukuran sesuai kebutuhan */
+    height: auto;
+}
+
+.main-title {
+    color: red;
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.list-container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparan hitam */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.download-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.download-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.download-list span {
+    flex: 1;
+}
+
+.download-list button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100px; /* Ubah ukuran untuk smartphone */
+    }
+
+    .main-title {
+        font-size: 1.5em;
+    }
+
+    .list-container {
+        width: 90%;
+    }
+}
